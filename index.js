@@ -1,18 +1,4 @@
-/*
-Name: Lindsay Trenton
-Original Author: Debasis Bhattacharya
-Assignment: Weather App with OpenWeather API
 
-Description: This code creates a Node.js server using Express, fetches weather data from the OpenWeather API based on a ZIP code input, and displays the results on a webpage. What I have changed is just that it now uses my own API key instead of the one provided by the professor and stores it using Secrets.
-
-Date: 2/24/2025
-Packages Used:
-  - express: Used to create the server and handle HTTP requests.
-  - https: Used to send and receive data from external servers (OpenWeather API).
-  - body-parser: Used to parse form data submitted by the user (zipcode input).
-Environment Variables:
-  - lindsayKey: Stores the OpenWeather API key for authentication.
-*/
 
 const express = require("express");
 const https = require("https");
@@ -39,7 +25,7 @@ app.post("/", function(req, res) {
     // sets the temperature units to Fahrenheit
     const units = "imperial";
     // gets the API key from the environment variable I created using Secrets
-    const apiKey = process.env['lindsayKey'];
+    const apiKey = process.env['weatherKey'];
     /* builds the URL we’ll use to get weather info from OpenWeather
      * https://api.openweathermap.org is the base URL
      * /data/2.5/weather is the path to the API endpoint
