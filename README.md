@@ -1,4 +1,6 @@
-# weather
-Code displays a simple HTML page to obtain the zip code from the user and then uses zip code to obtain weather from Open Weather Map API
-Note: Requires API Token Key by registration with site below. Free for basic usage
-https://openweathermap.org/api
+# WeatherZip
+Lindsay
+Koloa, HI
+I like to travel to Budapest and the weather there right now is cold. 
+
+My favorite weather is a little bit brisk. Between 60 and 75 degrees. Fall weather. 
